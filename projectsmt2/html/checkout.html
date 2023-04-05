@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title> Nota Pemesanan </title>
+    <style>
+        body {
+            background-color: #F5F5DC;
+        }
+        .tombol {
+            background-color: #c86b85;
+            height: 40px;
+            line-height: 42px;
+            color: #fff;
+            text-decoration: none;
+            display: inline-block;
+            padding: 0px 20px 0px 20px;
+            font-size: 15px;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <h3> List Pembelian </h3>
+	<table cellspacing=0>
+		<tr>
+			<td>
+                <form action="../php/insert-pesanan.php" method="post">
+					<table border=0>
+						<tr>
+							<td> Nomor Meja </td>
+							<td><input name="nomor_meja" type="number" style="width:180px" min="1" max="20" required /></td>
+						</tr>
+                        <tr>
+							<td> Atas Nama </td>
+							<td><input name="atas_nama" type="text" style="width:180px" minlength="2" required /></td>
+						</tr>
+                        <tr>
+							<td> Menu 1 </td>
+							<td>
+							<select name="menu1">
+                                <option> Tidak Ada </option>
+								<option> Espresso </option>
+								<option> Americano </option>
+								<option> Cappuccino </option>
+								<option> Latte </option>
+								<option> Vanilla Latte </option>
+                                <option> Caramel Latte </option>
+                                <option> Mochaccino </option>
+                                <option> Flat White </option>
+                                <option> Affogato </option>
+                                <option> Frappe </option>
+                                <option> White Coffee </option>
+                                <option> Black Coffee </option>
+                                <option> Strawberry Milk </option>
+                                <option> Banana Milk </option>
+                                <option> Chocolate Milk </option>
+                                <option> Matcha Milk </option>
+                                <option> Lemon Tea </option>
+                                <option> Strawberry Tea </option>
+                                <option> Java Tea </option>
+                                <option> Caramel Tea </option>
+                                <option> Kentang Goreng Saus Keju </option>
+                                <option> Sandwich Telur </option>
+                                <option> Buttermilk Waffle </option>
+                                <option> Pancake Pisang </option>
+                                <option> Pudding Roti Tawar </option>
+                                <option> Klappertart </option>
+                                <option> Fish And Chip </option>
+                                <option> Macaroni Schotel </option>
+                                <option> Mozarella Cheese Steak </option>
+							</select>
+							</td>
+						</tr>
+                        <tr>
+							<td> Sebanyak </td>
+							<td><input name="jumlah1" type="number" style="width:180px" min="0" max="10" required /></td>
+						</tr>
+                        <tr>
+							<td> Menu 2 </td>
+							<td>
+							<select name="menu2">
+                                <option> Tidak Ada </option>
+								<option> Espresso </option>
+								<option> Americano </option>
+								<option> Cappuccino </option>
+								<option> Latte </option>
+								<option> Vanilla Latte </option>
+                                <option> Caramel Latte </option>
+                                <option> Mochaccino </option>
+                                <option> Flat White </option>
+                                <option> Affogato </option>
+                                <option> Frappe </option>
+                                <option> White Coffee </option>
+                                <option> Black Coffee </option>
+                                <option> Strawberry Milk </option>
+                                <option> Banana Milk </option>
+                                <option> Chocolate Milk </option>
+                                <option> Matcha Milk </option>
+                                <option> Lemon Tea </option>
+                                <option> Strawberry Tea </option>
+                                <option> Java Tea </option>
+                                <option> Caramel Tea </option>
+                                <option> Kentang Goreng Saus Keju </option>
+                                <option> Sandwich Telur </option>
+                                <option> Buttermilk Waffle </option>
+                                <option> Pancake Pisang </option>
+                                <option> Pudding Roti Tawar </option>
+                                <option> Klappertart </option>
+                                <option> Fish And Chip </option>
+                                <option> Macaroni Schotel </option>
+                                <option> Mozarella Cheese Steak </option>
+							</select>
+							</td>
+						</tr>
+                        <tr>
+							<td> Sebanyak </td>
+							<td><input name="jumlah2" type="number" style="width:180px" min="0" max="10" required /></td>
+						</tr>
+                        <tr>
+							<td> Menu 3 </td>
+							<td>
+							<select name="menu3">
+                                <option> Tidak Ada </option>
+								<option> Espresso </option>
+								<option> Americano </option>
+								<option> Cappuccino </option>
+								<option> Latte </option>
+								<option> Vanilla Latte </option>
+                                <option> Caramel Latte </option>
+                                <option> Mochaccino </option>
+                                <option> Flat White </option>
+                                <option> Affogato </option>
+                                <option> Frappe </option>
+                                <option> White Coffee </option>
+                                <option> Black Coffee </option>
+                                <option> Strawberry Milk </option>
+                                <option> Banana Milk </option>
+                                <option> Chocolate Milk </option>
+                                <option> Matcha Milk </option>
+                                <option> Lemon Tea </option>
+                                <option> Strawberry Tea </option>
+                                <option> Java Tea </option>
+                                <option> Caramel Tea </option>
+                                <option> Kentang Goreng Saus Keju </option>
+                                <option> Sandwich Telur </option>
+                                <option> Buttermilk Waffle </option>
+                                <option> Pancake Pisang </option>
+                                <option> Pudding Roti Tawar </option>
+                                <option> Klappertart </option>
+                                <option> Fish And Chip </option>
+                                <option> Macaroni Schotel </option>
+                                <option> Mozarella Cheese Steak </option>
+							</select>
+							</td>
+						</tr>
+                        <tr>
+							<td> Sebanyak </td>
+							<td><input name="jumlah3" type="number" style="width:180px" min="0" max="10" required /></td>
+						</tr>
+                        <tr>
+							<td> Menu 4 </td>
+							<td>
+							<select name="menu4">
+                                <option> Tidak Ada </option>
+								<option> Espresso </option>
+								<option> Americano </option>
+								<option> Cappuccino </option>
+								<option> Latte </option>
+								<option> Vanilla Latte </option>
+                                <option> Caramel Latte </option>
+                                <option> Mochaccino </option>
+                                <option> Flat White </option>
+                                <option> Affogato </option>
+                                <option> Frappe </option>
+                                <option> White Coffee </option>
+                                <option> Black Coffee </option>
+                                <option> Strawberry Milk </option>
+                                <option> Banana Milk </option>
+                                <option> Chocolate Milk </option>
+                                <option> Matcha Milk </option>
+                                <option> Lemon Tea </option>
+                                <option> Strawberry Tea </option>
+                                <option> Java Tea </option>
+                                <option> Caramel Tea </option>
+                                <option> Kentang Goreng Saus Keju </option>
+                                <option> Sandwich Telur </option>
+                                <option> Buttermilk Waffle </option>
+                                <option> Pancake Pisang </option>
+                                <option> Pudding Roti Tawar </option>
+                                <option> Klappertart </option>
+                                <option> Fish And Chip </option>
+                                <option> Macaroni Schotel </option>
+                                <option> Mozarella Cheese Steak </option>
+							</select>
+							</td>
+						</tr>
+                        <tr>
+							<td> Sebanyak </td>
+							<td><input name="jumlah4" type="number" style="width:180px" min="0" max="10" required /></td>
+						</tr>
+                        <tr>
+							<td> Menu 5 </td>
+							<td>
+							<select name="menu5">
+                                <option> Tidak Ada </option>
+								<option> Espresso </option>
+								<option> Americano </option>
+								<option> Cappuccino </option>
+								<option> Latte </option>
+								<option> Vanilla Latte </option>
+                                <option> Caramel Latte </option>
+                                <option> Mochaccino </option>
+                                <option> Flat White </option>
+                                <option> Affogato </option>
+                                <option> Frappe </option>
+                                <option> White Coffee </option>
+                                <option> Black Coffee </option>
+                                <option> Strawberry Milk </option>
+                                <option> Banana Milk </option>
+                                <option> Chocolate Milk </option>
+                                <option> Matcha Milk </option>
+                                <option> Lemon Tea </option>
+                                <option> Strawberry Tea </option>
+                                <option> Java Tea </option>
+                                <option> Caramel Tea </option>
+                                <option> Kentang Goreng Saus Keju </option>
+                                <option> Sandwich Telur </option>
+                                <option> Buttermilk Waffle </option>
+                                <option> Pancake Pisang </option>
+                                <option> Pudding Roti Tawar </option>
+                                <option> Klappertart </option>
+                                <option> Fish And Chip </option>
+                                <option> Macaroni Schotel </option>
+                                <option> Mozarella Cheese Steak </option>
+							</select>
+							</td>
+						</tr>
+                        <tr>
+							<td> Sebanyak </td>
+							<td><input name="jumlah5" type="number" style="width:180px" min="0" max="10" required /></td>
+						</tr>
+                        <tr>
+							<td height="40">
+							<input type="submit" value="Buat Pesanan" />
+							</td>
+						</tr>
+                    </table>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <p>
+        <b>NOTE!!!</b>
+        <br>
+        Anda bisa mengosongi menu 2 hingga 5 jika pesanan anda sudah dirasa cukup. Cukup isi sebanyak "1" dan untuk menunya tetap pilih "Tidak Ada"
+    </p>
+    <p>
+        <a href="../php/Cek-Pesanan.php" target="_parent" class="tombol">Cek Pesanan</a>
+    </p>
+    <p>
+        <a href="../html/layout.html" target="_parent" class="tombol">Home</a>
+    </p>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+<title>Untitled Document</title>
+<link href="../css/login.css" rel="stylesheet" type="text/css">
+</head>
+<body id="bg-login">
+	<div class="box-login2">
+		<h2>Register</h2>
+        <table>
+            <tr>
+                <td>
+                    <form method="post" action="../php/registerr.php">
+                        <table border="0" cellspacing="20">
+                            <tr>
+                                <td>Nama</td>
+                                <td><input type="text" name="nama" placeholder="Nama Lengkap"></td>
+                            </tr>
+                            <tr>
+                                <td>Jenis Kelamin</td>
+                                <td>
+                                <input name="jenis-kelamin" type="radio" value="laki-laki" /> Laki-laki
+                                <input name="jenis-kelamin" type="radio" value="perempuan" /> Perempuan
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Tanggal Lahir</td>
+                                <td>
+                                <input name="tanggal-lahir" type="date" min="1950-03-21" max="2020-03-21" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Username</td>
+                                <td><input type="text" name="username" placeholder="Username"></td>
+                            </tr>
+                            <tr>
+                                <td>Password</td>
+                                <td><input type="password" name="password" placeholder="Password"></td>
+                            </tr>
+                            <tr>
+                                <td><input type="submit" name="submit" value="Daftar" class="btn"></td>
+                            </tr>
+                        </table>
+                    </form>
+                </td>
+            </tr>
+        </table>
+	</div>
+</body>
+</html>
